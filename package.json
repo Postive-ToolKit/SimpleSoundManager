@@ -1,0 +1,12 @@
+﻿{
+  "name": "com.positive.simple-sound-system",
+  "version": "1.0.0",
+  "displayName": "Simple Sound System",
+  "description": "A simple sound system for Unity",
+  "unity": "2019.4",
+  "author": {
+    "name": "Positive",
+    "email": "postive12@gmail.com",
+    "url": "https://postiveground.com"
+  }
+}
