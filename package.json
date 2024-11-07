@@ -1,8 +1,8 @@
 ﻿{
-  "name": "com.positive.simple-sound-system",
+  "name": "com.positive.simple-sound-manager",
   "version": "1.0.0",
-  "displayName": "Simple Sound System",
-  "description": "A simple sound system for Unity",
+  "displayName": "Simple Sound Manager",
+  "description": "A simple sound manager for Unity",
   "unity": "2019.4",
   "author": {
     "name": "Positive",
