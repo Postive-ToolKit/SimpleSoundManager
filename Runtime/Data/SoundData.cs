@@ -65,13 +65,13 @@ namespace Postive.SimpleSoundAssetManager.Runtime.Data
         [Range(0f, 1f)]
         [SerializeField] private float _spacialBlend = 0f;
         [SerializeField] private bool _useRandomVolume = false;
-        [Range(0f, 2f)]
+        [Range(0f, 1f)]
         [SerializeField] private float _volume = 1f;
-        [SerializeField] private Vector2 _volumeRange = new Vector2(0.9f, 1.1f);
+        [SerializeField] private Vector2 _volumeRange = new Vector2(0.75f, 1f);
         [SerializeField] private bool _useRandomPitch = false;
-        [Range(0f, 2f)]
-        [SerializeField] private float _pitch = 1f;
-        [SerializeField] private Vector2 _pitchRange = new Vector2(0.9f, 1.1f);
+        [Range(-3f, 3f)]
+        [SerializeField] private float _pitch = 0f;
+        [SerializeField] private Vector2 _pitchRange = new Vector2(-.1f, .1f);
         public SpatialSetting SpatialSetting = new SpatialSetting();
     }
 }

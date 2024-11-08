@@ -9,7 +9,7 @@
     "email": "postive12@gmail.com",
     "url": "https://postiveground.com"
   },
-    "dependencies": {
-        "com.positive.categorized-db": "https://github.com/Postive-ToolKit/CategorizedDB.git"
-    }
+  "dependencies": {
+    "com.positive.categorized-db": "https://github.com/Postive-ToolKit/CategorizedDB.git"
+  }
 }

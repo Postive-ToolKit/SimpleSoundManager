@@ -29,7 +29,7 @@ namespace Postive.SimpleSoundManager.Editor.CustomEditor
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.LabelField("Volume", GUILayout.Width(150));
                 volumeRange.x = EditorGUILayout.FloatField(volumeRange.x, GUILayout.Width(50));
-                EditorGUILayout.MinMaxSlider(ref volumeRange.x, ref volumeRange.y, 0f, 2f);
+                EditorGUILayout.MinMaxSlider(ref volumeRange.x, ref volumeRange.y, 0f, 1f);
                 volumeRange.y = EditorGUILayout.FloatField(volumeRange.y, GUILayout.Width(50));
                 EditorGUILayout.EndHorizontal();
                 soundData.VolumeRange = volumeRange;
@@ -43,7 +43,7 @@ namespace Postive.SimpleSoundManager.Editor.CustomEditor
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.LabelField("Pitch", GUILayout.Width(150));
                 pitchRange.x = EditorGUILayout.FloatField(pitchRange.x, GUILayout.Width(50));
-                EditorGUILayout.MinMaxSlider(ref pitchRange.x, ref pitchRange.y, 0f, 2f);
+                EditorGUILayout.MinMaxSlider(ref pitchRange.x, ref pitchRange.y, -3f, 3f);
                 pitchRange.y = EditorGUILayout.FloatField(pitchRange.y, GUILayout.Width(50));
                 EditorGUILayout.EndHorizontal();
                 soundData.PitchRange = pitchRange;
