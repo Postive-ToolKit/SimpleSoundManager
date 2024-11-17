@@ -1,10 +1,9 @@
-﻿using Runtime.Attributes;
+﻿using Postive.CategorizedDB.Runtime.Categories.Interfaces;
+using Runtime.Attributes;
 
 namespace Postive.SimpleSoundAssetManager.Runtime.Attributes
 {
     public class SoundSelectorAttribute : CategoryElementSelectorAttribute {
-        public SoundSelectorAttribute() : base() {
-            ElementFinder = SoundDB.Instance;
-        }
+        public override ICategoryElementFinder ElementFinder => SoundDB.Instance;
     }
 }
