@@ -2,12 +2,13 @@
 using Postive.CategorizedDB.Editor.CustomEditors.Native.CategorizedDBEditor;
 using Postive.CategorizedDB.Runtime.Categories;
 using Postive.SimpleSoundAssetManager.Runtime;
+using Postive.SimpleSoundAssetManager.Runtime.Data;
 using UnityEditor;
 using UnityEditor.Callbacks;
 
 namespace Postive.SimpleSoundAssetManager.Editor.CustomEditor.SoundDBEditors
 {
-    public class NativeSoundDBEditor: CategorizeDBEditor
+    public class NativeSoundDBEditor: CategorizeDBEditor<SoundData>
     {
         protected override CategorisedElementDB CurrentDB => SoundDB.Instance;
         [OnOpenAsset]
