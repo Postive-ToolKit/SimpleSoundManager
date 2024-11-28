@@ -2,12 +2,27 @@
 SimpleSoundManager은 유니티에서 손쉽게 사운드 에셋을 관리하고 사용하기 위해 만들어진 패키지입니다. SoundDB을 이용해 새로운 사운드를 추가하거나, 볼륨, 피치, 3D 사운드 여부 등을 설정할 수 있습니다.
 해당 패키지는 [CategoryzedDB](https://github.com/Postive-ToolKit/CategorizedDB) 패키지를 기반으로 제작되었으며 [CategoryzedDB](https://github.com/Postive-ToolKit/CategorizedDB) 패키지를 먼저 설치해야 합니다.
 ## 목차
-
-### Features
+- [SimpleSoundManager](#simplesoundmanager)
+  - [목차](#목차)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+    - [SoundDB 생성](#sounddb-생성)
+    - [SoundDB 에디터](#sounddb-에디터)
+    - [SoundData 추가](#sounddata-추가)
+    - [SoundData 값 변경](#sounddata-값-변경)
+      - [2D 사운드롸 3D 사운드](#2d-사운드롸-3d-사운드)
+      - [3D 사운드 설정](#3d-사운드-설정)
+    - [SoundData 삭제](#sounddata-삭제)
+    - [Sound 선택](#sound-선택)
+    - [Sound 재생](#sound-재생)
+  - [설치 방법](#설치-방법)
+    - [Git URL](#git-url)
+  - [마무리](#마무리)
+## Features
 - 사운드 관리
 - 사운드 추가 및 수치 조정
 - 사운드 카테고리 변경
-### Getting Started
+## Getting Started
 [유니티 패키지 매니저](#git-url)를 이용해 설치하는 방법을 설명합니다.
 
 ### SoundDB 생성
