@@ -4,7 +4,7 @@ using UnityEngine.Audio;
 
 namespace Postive.SimpleSoundAssetManager.Runtime.Data
 {
-    public class SoundData : CategoryElement
+    public sealed class SoundData : CategoryElement
     {
         public AudioClip Clip {
             get {
