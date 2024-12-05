@@ -45,7 +45,7 @@ namespace Postive.SimpleSoundManager.Editor.CustomEditor
                 SoundManager.PlaySound(soundName.stringValue, _soundPlayPosition);
             }
             if (GUI.Button(new Rect(position.x + halfWidth, position.y, halfWidth, EditorGUIUtility.singleLineHeight), "Play Sound At Transform")) {
-                SoundManager.PlaySoundAtTransform(soundName.stringValue, _soundPlayTransform);
+                SoundManager.PlaySound(soundName.stringValue, _soundPlayTransform);
             }
             
             EditorGUI.EndProperty();

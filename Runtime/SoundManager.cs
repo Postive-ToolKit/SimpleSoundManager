@@ -53,7 +53,7 @@ namespace Postive.SimpleSoundAssetManager.Runtime
         /// <param name="key"> sound key</param>
         /// <param name="transform"> transform to play sound at</param>
         /// <returns>AudioSource of the sound</returns>
-        public static AudioSource PlaySoundAtTransform(string key, Transform transform)
+        public static AudioSource PlaySound(string key, Transform transform)
         {
             var sound = GetSound(key);
             if (sound == null) {

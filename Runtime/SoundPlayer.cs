@@ -17,7 +17,7 @@ namespace Postive.SimpleSoundAssetManager.Runtime
             SoundManager.PlaySound(_soundName, position);
         }
         public void PlaySoundAtTransform(Transform transform){
-            SoundManager.PlaySoundAtTransform(_soundName, transform);
+            SoundManager.PlaySound(_soundName, transform);
         }
     }
 }
