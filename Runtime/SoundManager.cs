@@ -22,7 +22,6 @@ namespace Postive.SimpleSoundAssetManager.Runtime
         private static SoundManager _instance = null;
         [SerializeField] private bool _useDebug = false;
         private Queue<GameObject> _pooledAudioSources = new Queue<GameObject>();
-        private AudioListener _audioListener = null;
         /// <summary>
         /// Play sound at transform
         /// </summary>
