@@ -16,10 +16,10 @@ namespace Postive.SimpleSoundAssetManager.Runtime
         public void PlaySound() {
             SoundManager.PlaySound(_soundName);
         }
-        public void PlaySoundAtPosition(Vector3 position) {
+        public void PlaySound(Vector3 position) {
             SoundManager.PlaySound(_soundName, position);
         }
-        public void PlaySoundAtTransform(Transform transform){
+        public void PlaySound(Transform transform){
             SoundManager.PlaySound(_soundName, transform);
         }
     }
