@@ -13,6 +13,9 @@ namespace Postive.SimpleSoundAssetManager.Runtime
         }
         [SoundSelector]
         [SerializeField] private string _soundName = "NONE";
+        public void PlaySound() {
+            SoundManager.PlaySound(_soundName);
+        }
         public void PlaySoundAtPosition(Vector3 position) {
             SoundManager.PlaySound(_soundName, position);
         }
