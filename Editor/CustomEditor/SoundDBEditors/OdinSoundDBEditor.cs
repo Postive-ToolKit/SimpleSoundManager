@@ -14,7 +14,6 @@ namespace Postive.SimpleSoundAssetManager.Editor.CustomEditor.SoundDBEditors
 {
     public class OdinSoundDBEditor: OdinCategorizeDBEditor<SoundData>
     {
-        protected override string WindowTarget => "Sound DB";
         protected override GenericCategorisedDB<SoundData> CurrentDB => SoundDB.Instance;
         [OnOpenAsset]
         public static bool OnOpenAsset(int instanceID, int line)
