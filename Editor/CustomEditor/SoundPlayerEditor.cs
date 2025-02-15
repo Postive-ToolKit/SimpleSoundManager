@@ -16,12 +16,10 @@ namespace Postive.SimpleSoundManager.Editor.CustomEditor
             EditorGUI.BeginProperty(position, label, property);
             SerializedProperty soundName = property.FindPropertyRelative("_soundName");
             
-            
-            
             _heightIndex++;
             position.y += 2;
             property.serializedObject.Update();
-            EditorGUI.PropertyField(new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight), soundName);
+            EditorGUI.PropertyField(new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight), soundName, new GUIContent(ObjectNames.NicifyVariableName(fieldInfo.Name)));
             property.serializedObject.ApplyModifiedProperties();
             
             if (!Application.isPlaying) {
