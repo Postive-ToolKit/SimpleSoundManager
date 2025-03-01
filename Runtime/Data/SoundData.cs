@@ -58,6 +58,8 @@ namespace Postive.SimpleSoundAssetManager.Runtime.Data
             get => _useRandomPitch;
         }
         public AudioMixerGroup Mixer => _mixer;
+        public bool IsEmpty => _clips == null || _clips.Length == 0;
+
         [SerializeField] private AudioClip[] _clips;
         [Tooltip("The audio mixer group to play the sound on, if null, the sound will play on the master mixer")]
         [SerializeField] private AudioMixerGroup _mixer;

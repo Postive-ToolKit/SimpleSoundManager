@@ -34,6 +34,12 @@ namespace Postive.SimpleSoundAssetManager.Runtime
                 if (Instance._useDebug) Debug.LogError($"Sound with name {key} not found");
                 return null;
             }
+            if (sound.IsEmpty) {
+                if (Instance._useDebug) {
+                    Debug.LogError($"Sound with name {key} is empty");
+                }
+                return null;
+            }
             //attach audio source to position and play sound
             var audioSource = Instance.GetAudioSource();
             audioSource.transform.parent = null;
@@ -59,6 +65,13 @@ namespace Postive.SimpleSoundAssetManager.Runtime
             if (sound == null) {
                 if (Instance._useDebug) {
                     Debug.LogError($"Sound with name {key} not found");
+                }
+                return null;
+            }
+
+            if (sound.IsEmpty) {
+                if (Instance._useDebug) {
+                    Debug.LogError($"Sound with name {key} is empty");
                 }
                 return null;
             }
